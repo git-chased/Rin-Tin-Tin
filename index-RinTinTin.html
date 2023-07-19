@@ -1,0 +1,112 @@
+<!-- Intro to HTML & CSS I
+
+  Module Project Overview
+
+    You will build a website to display the bio of your favorite programmer, artist, etc.
+
+    In order to do this, you will create an `index.html` file and scaffold the document
+    with the elements shared by all HTML documents:
+
+    - doctype declaration
+    - html element
+    - head, containing a title and an optional style tag
+    - body, containing the markup that renders to the screen
+
+  Requirements
+
+    Review this article: https://www.w3schools.com/html/html5_semantic_elements.asp
+
+    Create an `index.html` file for your site, or use this same file.
+
+    For your site, you will make use of at least the following semantic elements:
+
+    - header (to contain the main heading of the site, and the nav)
+    - nav (to contain some links to navigate to the different sections of this document)
+    - section (each holding at least a heading and a paragraph)
+    - aside (containing an img and a caption)
+    - footer (containing a contact form)
+    - form (containing at least two inputs with their labels)
+
+    See an example of a finished site: https://bloominstituteoftechnology.github.io/img/anita-borg-bio-website.png
+
+    The example above is quite simple, but you can make your site as fancy as you'd like. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rin Tin Tin</title>
+  <style>
+    body {padding: 10px;
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEcqjdfTIlpMtkATxybJ81nqDjvxXp1sVfMw&usqp=CAU")
+    }
+    section {background-color: aquamarine;
+      padding: 10px;
+      line-height: 25px;
+    }
+    
+ img {
+      max-width: 100%;
+    }
+    nav {font-size: larger;
+          font-weight: bold;
+          background-color: aquamarine;
+          color: red;
+          }
+          header {
+            color:aquamarine;
+            text-shadow: black;
+            text
+          }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> <p style="text-align:center">Rin Tin Tin </h1>
+    </header>
+    <nav>
+      <a href="#bio">Bio</a> |
+      <a href="#career">Career</a> |
+      <a href="#video">Video</a> |
+    </nav>
+    <div class="container">
+      <img src="https://dwgyu36up6iuz.cloudfront.net/heru80fdn/image/upload/c_fill,d_placeholder_thenewyorker.png,fl_progressive,g_face,h_1080,q_80,w_1920/v1396657238/thenewyorker_the-adventures-of-rin-tin-tin.jpg" alt="Rin">
+    </div>
+    <div class="container">
+  <main>
+    <section id="bio">
+      <h2>The Most Infulential Animal Actor Of All Time</h2>
+      <article>
+        <p>Rin Tin Tin, an exceptional animal actor, holds a strong claim to fame as one of the most renowned and impactful figures in the world of entertainment. Having triumphed over the hardships of World War I, Rin Tin Tin embarked on a remarkable journey from Germany to the United States. Captivating audiences with unparalleled charm, Rin Tin Tin rose to such stardom that there exists a compelling argument for him to have been the recipient of the prestigious Academy Award for Best Actor in 1929. It is widely believed that he garnered an overwhelming number of first-place votes for this accolade before the Academy, regrettably, made the decision to honor a human actor instead. Since then, the integrity of the award has been called into question, a sentiment shared by many.</p>
+      </article>
+
+    </section>
+    <section id="career">
+      <h2>Career</h2>
+      <article>
+        <p>Rin Tin Tin, the iconic canine actor, achieved his breakthrough in the film "Where the North Begins" (1923) alongside Claire Adams. This blockbuster not only propelled Rin Tin Tin to stardom but also saved Warner Bros. from financial ruin. With 24 subsequent film appearances, each met with immense popularity, Rin Tin Tin earned the moniker "the mortgage lifter" within the studio. Moreover, his success played a pivotal role in elevating screenwriter Darryl F. Zanuck to the position of film producer. Rin Tin Tin's fame extended beyond the silver screen as well, securing lucrative endorsement deals with prominent dog food brands. The German Shepherd's worldwide appeal transcended language barriers, with his films gaining immense popularity across various countries. While a popular Hollywood legend credits Rin Tin Tin with winning the Best Actor award at the inaugural Academy Awards in 1929, historical evidence suggests this story is an urban legend. Despite primarily starring in silent films, Rin Tin Tin made notable appearances in four sound features, including "The Lightning Warrior" (1931), filmed at the renowned Iverson Movie Ranch in Los Angeles. Throughout his life, Rin Tin Tin sired 48 puppies, with notable descendants owned by Greta Garbo, W.K. Kellogg, and Jean Harlow.  </p>
+      </article>
+
+    </section>
+    <section id="video">
+      <h1>Biographical Video</h1>
+      <iframe src="https://www.youtube.com/embed/XNJ82w6bFSA" frameborder="100" id="youtube-441362"></iframe>
+      
+    </section>
+  </main>
+  </div>
+  <section>
+    <h1>Newsletter Signup</h1>
+    <div class="container">
+      <form action="" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </section>
+  <div class="container">
+    <img src="https://bramblitt.com/cdn/shop/products/RinTinTinOP_690335a0-6bbc-4f91-9ebd-349e74e42584_grande.jpg?v=1579720166" alt="Rin">
+  </div>
+</body>
+</html>
